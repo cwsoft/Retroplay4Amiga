@@ -1,11 +1,11 @@
-# Pi@miga Retroplay Setup
-Anleitung zum Erstellen einer eigenen Amiga-Retroplay Umgebung mit etwa 4.739 Amiga Spielen für das Raspberry (ab RPI3b). `Pi@miga-Retroplay-Setup` verwendet die Open-Source Software [Retropie 4.8.2](https://retropie.org.uk/download/) und [Amiberry 5.4](https://github.com/BlitterStudio/amiberry/wiki) zur Emulation der Amiga Hardware auf dem Raspberry Pi. Die 4.739 Amiga Spiele entstammen dem [Retroplay's WHDLoad Archiv](https://eab.abime.net/showthread.php?t=109171) (2023-01-03).
+# Pi3b-Retroplay4Amiga
+Anleitung zum Erstellen einer Amiga-Retroplay Umgebung mit 2.600 Amiga Spielen für das Raspberry Pi3b. Dieses Projekt nutzt die Open-Source Software [Retropie 4.8.2](https://retropie.org.uk/download/) und [Amiberry 5.4](https://github.com/BlitterStudio/amiberry/wiki) für die Amiga-Emulation. Die Amiga Spiele entstammen dem [Retroplay's WHDLoad Archiv](https://eab.abime.net/showthread.php?t=109171) (Stand: 2023-01-03).
 
 ## Benötigte Dateien
-- Raspberry Pi 2/3/4/400 mit SD-Karte (min. 8 GB)
+- Raspberry Pi3B mit SD-Karte (min. 32 GB)
 - [Retropie 4.8](https://retropie.org.uk/download/) für Pi 2/3 bzw. Pi 4/400
-- MD5-Pi2/3: 224e64d8820fc64046ba3850f481c87e
-- MD5-Pi4/400: b5daa6e7660a99c246966f3f09b4014b
+   - MD5-Pi2/3: 224e64d8820fc64046ba3850f481c87e
+   - MD5-Pi4/400: b5daa6e7660a99c246966f3f09b4014b
 - Amiga Emulator [Amiberry](https://github.com/BlitterStudio/amiberry/wiki)
 - Legale Amiga Kickstart Roms z.B. [AmigaForever Plus](https://www.amigaforever.com/plus/)
 - Amiga Spieldateien (z.B. ADF, LHA) z.B. [WHDownload](https://www.whdownload.com/)
