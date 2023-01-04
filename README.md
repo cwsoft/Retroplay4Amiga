@@ -1,5 +1,5 @@
 # Pi3b-Retroplay4Amiga
-Anleitung zum Erstellen einer Amiga-Retroplay Umgebung mit 2.600 Amiga Spielen für das Raspberry Pi3b. Dieses Projekt nutzt die Open-Source Software [Retropie 4.8.2](https://retropie.org.uk/download/) und [Amiberry 5.4](https://github.com/BlitterStudio/amiberry/wiki) für die Amiga-Emulation. Die Amiga Spiele entstammen dem [Retroplay's WHDLoad Archiv](https://eab.abime.net/showthread.php?t=109171) (Stand: 2023-01-03).
+Anleitung zum Erstellen einer Amiga-Retroplay Umgebung mit 2.460 Amiga Spielen für das Raspberry Pi3b. Dieses Projekt nutzt die Open-Source Software [Retropie 4.8.2](https://retropie.org.uk/download/) und [Amiberry 5.4](https://github.com/BlitterStudio/amiberry/wiki) für die Amiga-Emulation. Die Amiga Spiele entstammen dem [Retroplay's WHDLoad Archiv](https://eab.abime.net/showthread.php?t=109171) (Stand: 2023-01-03).
 
 ## Benötigte Dateien
 - Raspberry Pi3B mit SD-Karte (min. 32 GB)
@@ -42,6 +42,8 @@ Anleitung zum Erstellen einer Amiga-Retroplay Umgebung mit 2.600 Amiga Spielen f
    - Button B / SOUTH: Feuertaste rechts
    - alle anderen Tasten überspringen (belegte Taste z.B. Feuertaste links länger drücken)
    - mit Leertaste (OK) abschliessen
+   - [PS4-Controller](https://retropie.org.uk/docs/Controller-Configuration/) Belegung
+   - [PS4-Wireless-Setup](https://www.youtube.com/watch?v=uoFQrnwGoLM)
 4. Schritt 3 für weitere Controller wiederholen
 5. Zur RetroPie Configuration wechseln (Esc, Enter) -> RASPI-CONFIG aufrufen (Pfeiltasten + Enter)
    - [5] Localisation Einstellungen ändern:
@@ -131,16 +133,17 @@ Beim nächsten ES-Start sind in WHDLoad/ADF Spielen die Feuertasten vertauscht.
 ## G: Amiga Feeling Tweaks
 1. Start-Menü beim Spielstart deaktivieren
    - Retropie Setup -> [C] Configuration / tools -> [225] runcommand
-     [1] Launch menu (disable)
-     [2] Launch menu art (disable)
-     [4] Launch image delay (3s)
+     - [1] Launch menu (disable)
+     - [2] Launch menu art (disable)
+     - [4] Launch image delay (3s)
      Copy launching.png|jpg file to each configs/emulator to show launch image instead
 2. Splashscreen beim Hochfahren anzeigen
    - Copy splashscreen image or video to /splashscreens Samba folder
    - Retropie Config -> Splash Screens -> [1] Choose splashscreens -> [2] Own/Extra splashscreens -> Select file
 3. Spiel-Infos und Vorschaubilder erstellen
    - ES -> S -> Scrapper -> Scrape Now
-   Hinweis: WHDLoad Spiele werden oft nicht korrekt erkannt. Input -> Enter -> alles bis auf Spielname löschen.
+   Hinweis: WHDLoad Spiele werden oft nicht korrekt erkannt. 
+   Input -> Enter -> alles bis auf Spielname löschen.
    Optional: skyscraper installieren und von der Kommandozeile einlesen.
 4. Raspberry Pi Rainbow screen deaktivieren
    ```
@@ -183,7 +186,7 @@ Wer nicht gerne selbst LHA-Dateien herunterlädt, kann auf fertige Packete (z.B.
    - [4] Generate game list(s)
    
 ### Troubleshoting Amiga-Spiele-Namen
-Ggf. werden die Amiga-Spiele-Namen nur als gekürzter Dateiname angezeigt. Dann kann folgendes Abhilfe schaffen.
+Ggf. werden Amiga-Spiele-Namen in ES als Dateiname angezeigt. Dann kann folgendes Abhilfe schaffen.
 
 1. Skyscraper Konfigurationsdatei ändern
 In der Datei `~/.skyscraper/config.ini` folgende Werte im Abschnitt [main] ändern:
@@ -201,4 +204,4 @@ Im Skyscraper Menü (siehe vorheriger Punkt 4) folgende Optionen ändern:
 	- [2] Remove bracket info (Enabled)
 	- [3] Use ROM folders for game list & media (Disabled)
 	
-Danach die ES Game Liste neu erstellen lassen [4] Generate game list(s), nun sollten Spielnamen vernünftig formatiert sein.
+4. ES Game Liste neu erstellen lassen [4] Generate game list(s).
